@@ -1,0 +1,140 @@
+EX 5
+Aim:
+The aim of this exercise is to learn and understand how to work with
+collaborative repository management using git.
+Working with collaborative repository management using Git involves
+collaborating with other developers and effectively managing changes to a shared
+codebase. Here are some key practices and concepts to consider:
+Forking a Repository
+- When you want to contribute to a project hosted on a remote repository, it's
+common to start by forking the repository.
+- Forking creates a personal copy of the repository under your GitHub account or
+another hosting platform, where you can freely make changes without affecting
+the original repository.
+- To fork a repository on GitHub, navigate to the repository's page and click the
+"Fork" button.
+Cloning a Forked Repository
+- After forking a repository, you need to clone the forked repository to your local
+machine to start making changes.
+- Use the `git clone` command, as explained in a previous answer, to clone the
+forked repository.
+Adding an Upstream Remote
+- The original repository that you forked is known as the "upstream" repository.
+It represents the source of truth for the project.
+- To synchronize your forked repository with the latest changes from the upstream
+repository, you can add an "upstream" remote.
+- Use the `git remote add` command to add the upstream remote URL. For
+example:
+git remote add upstream <upstream-url>
+Keeping Your Forked Repository Up to Date
+- To incorporate the latest changes from the upstream repository into your forked
+repository, follow these steps:
+- Fetch the latest changes from the upstream remote: `git fetch upstream`
+- Checkout your local main branch: `git checkout main`
+- Merge the changes from the upstream/main branch into your local main
+branch: `git merge upstream/main`
+- Push the updated main branch to your forked repository: `git push origin
+main`
+Creating Branches for Collaborative Work
+- When working on a collaborative project, it's common to create branches for
+new features, bug fixes, or other changes.
+- Use the `git branch` command to create a new branch: `git branch <branchname>`
+- Switch to the newly created branch using `git checkout`: `git checkout
+<branch-name>`
+- Alternatively, you can create and switch to a new branch in one command: `git
+checkout -b <branch-name>`
+Pushing Changes and Creating Pull Requests
+- Once you've made changes on a branch, you can push the branch to your forked
+repository using `git push origin <branch-name>`.
+- After pushing the branch, you can create a pull request on the upstream
+repository to propose your changes for merging into the main codebase.
+- On the upstream repository's page, find the "Pull requests" section and click the
+"New pull request" button.
+- Select the appropriate branches for the base (usually main) and compare (your
+branch) branches.
+- Provide a title and description for your pull request, then click "Create pull
+request" to submit it.
+Reviewing and Merging Pull Requests
+- Collaborators or maintainers of the upstream repository can review and
+comment on your pull request.
+- They may request changes or provide feedback before merging the changes.
+- Once the pull request is approved, it can be merged into the main branch of the
+upstream repository.
+Result:
+Working with collaborative repository management using git is done and
+executed successfully.
+
+
+
+EX6
+
+Aim The aim of this experiment is to create implementation of core review in git
+Description
+Git is a powerful tool for version control, but it’s also a crucial tool for collaborating with remote
+teams. When working remotely, effective communication and collaboration arekey to ensure that
+your team is working together towards a common goal.
+Use a shared repository Using a shared repository is the foundation of effective collaboration
+with Git. By hosting your repository on a remote server, you can give your team members access
+to the latest version of your code, regardless of their location.
+Create a new repository: git init
+Clone a repository: git clone [respository URL]
+Add a remote repository: git remote add [name] [repository URL]
+Fetch changes from a remote repository: git fetchPull
+changes from a remote repository: git pull Push
+changes to a remote repository: git push Use
+Branching and merging Branching and merging are powerful features of Git that allow you to
+work on multiple versions of your code simultaneously, without interfering with each other’s
+work. By using branching and merging effectively, your team can work on different features or
+bug fixes in parallel, without causing conflicts.
+Create a new branch: git branch [name]Switch
+to a branch: git checkout [name]Merge a
+branch: git merge [name] Resolve merge
+conflicts: git mergetool Delete a branch: git
+Ex. No. 6 IMPLEMENTATION OF CORE REVIEW IN GIT
+Date:02.04.2024
+
+URK23CS5076
+
+branch -d [name]
+Use Pull requests Pull requests are a great way to review and merge changes from differentteam
+members before they are merged into the main codebase. By using pull requests, you can ensure
+that your code is reviewed and tested before it is merged into the main branch, which can help
+prevent bugs and other issues.
+Create a new pull request: git request-pull [branch] [repository URL]
+Review and merge a pull request: git pull-request
+Close a pull request: git request-pull -C [branch] [repository URL]
+Use Issue Tracking Issue tracking is a great way to keep track of bugs, feature requests, and
+other issues that need to be addressed in your code. By using an issue tracking system like
+GitHub Issues, you can assign tasks to team members, track progress, and ensure that all issues
+are addressed in a timely manner.
+Create a new issue: git commit -m “[issue number] [commit message]”
+Assign an issue to a team member: git assign [username]
+Clone an issue: git clone [issue number] Reopen an
+issue: git reopen [issue number] Communicate
+Effectively Effective communication is key to collaboration, especially in a remote team setting.
+Use tools like Slack or Microsoft Teams to stay in touch with your team members, and use video
+calls or screen sharing to discuss code changes or work on problems together.
+Start a video call: git video-call [username]
+Share yourscreen: gitscreen-share
+Send a message: git message [username] [message]
+Use Git hooks Git hooks are scripts that Git runs automatically at certain points in the
+Gitworkflow. You can use Git hooks to automate repetitive tasks, enforce coding standards, or
+perform other tasks that are important to your team’s workflow.
+Install a git hook: git init [hook name]
+Write a git hook script: nano.git/hooks/[hook name]
+
+Make the Git hook script executable: chmod +x .git/hooks/[hook name]
+Use Gitsubmodules Git submodules are repositories that are embedded inside other repositories.
+You can use Git submodules to manage dependencies, or to includeshared code in multiple
+projects.
+Add a Git submodule: git submodule add [repository URL]
+Update a Gitsubmodule: gitsubmodule update
+Remove a Gitsubmodule: gitsubmodule deinit [submodule path]
+Use Git aliases Git aliases are shortcuts for commonly used Git commands. You can useGit
+aliases to save time and improve your productivity when working with Git.
+Set up a Git alias: git config –global alias.[alias name] ‘[Git command]’
+Use a Git alias: git [alias name]
+Output
+
+Result : The experiment to create implementation of core review in git is successfully
+executed and verified
